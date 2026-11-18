@@ -1,15 +1,10 @@
-function Navbar() {
-  return (
-    <nav>
-      <h2>Student Dashboard</h2>
-        <ul>
-            <li><a href="/Home">Home</a></li>
-            <li><a href="/Profile">Profile</a></li>
-            <li><a href="/Attendance">Attendance</a></li>
-            <li><a href="/Results">Results</a></li>
-        </ul>
+function Navbar () {
+    return (
+    <nav className="navbar">
+        <div className="navbar-logo">
+        <h1>Welcome to student profile</h1>
+        </div>
     </nav>
-  );
-}  
-
+    );
+}
 export default Navbar;

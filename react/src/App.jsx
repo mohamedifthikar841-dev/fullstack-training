@@ -1,17 +1,18 @@
-import Navbar from './components/navbar';
-import StudentProfile from './components/StudentProfile';
-import WelcomeDashboard from './components/WelcomeDashboard';
-
-
-
+import Navbar from "./components/Navbar";
+import Card from "./components/Card";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar />
-      <WelcomeDashboard />
-      <StudentProfile />
-    </div>
+      <div className="card-container">
+        <Card name="ifthikar" department="CSE" year="III" />
+        <Card name="rickshan" department="Mech" year="III" />
+        <Card name="asan" department="IT" year="IV" />
+        <Card name="sanjay" department="ECE" year="II" />
+      </div>
+    </>
   );
 }
 
