@@ -1,10 +1,22 @@
-function Navbar () {
-    return (
+import { Link } from "react-router-dom";
+import { FaGraduationCap } from "react-icons/fa";
+
+function Navbar() {
+  return (
     <nav className="navbar">
-        <div className="navbar-logo">
-        <h1>Welcome to student profile</h1>
-        </div>
+
+      <h2>
+        <FaGraduationCap /> Student Portal
+      </h2>
+
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/students">Students</Link>
+        <Link to="/contact">Contact</Link>
+      </div>
+
     </nav>
-    );
+  );
 }
+
 export default Navbar;
