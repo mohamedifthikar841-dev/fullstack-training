@@ -1,3 +1,4 @@
+
 import StudentCard from "../components/Card";
 
 function Student() {

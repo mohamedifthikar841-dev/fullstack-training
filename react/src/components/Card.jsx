@@ -3,9 +3,6 @@ import { FaUserGraduate } from "react-icons/fa";
 import "./card.css";
 
 function StudentCard({ student }) {
-
-  const studentData = student || {};
-
   return (
     <div className="student-card">
 
@@ -18,19 +15,16 @@ function StudentCard({ student }) {
       <div className="card-body">
 
         <img
-          src={studentData.image || "https://placehold.co/120"}
-          alt={studentData.name || "Student"}
+          src={student.image}
+          alt={student.name}
         />
 
-        <h2>{studentData.name || "Student Name"}</h2>
+        <h2>{student.name}</h2>
 
-        <p><b>ID:</b> {studentData.id || "N/A"}</p>
-
-        <p><b>Department:</b> {studentData.department || "N/A"}</p>
-
-        <p><b>Year:</b> {studentData.year || "N/A"}</p>
-
-        <p><b>Email:</b> {studentData.email || "N/A"}</p>
+        <p><b>ID:</b> {student.id}</p>
+        <p><b>Department:</b> {student.department}</p>
+        <p><b>Year:</b> {student.year}</p>
+        <p><b>Email:</b> {student.email}</p>
 
       </div>
 

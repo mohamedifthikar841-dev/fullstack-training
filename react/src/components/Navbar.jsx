@@ -1,5 +1,7 @@
+
 import { Link } from "react-router-dom";
 import { FaGraduationCap } from "react-icons/fa";
+import "./Navbar.css";
 
 function Navbar() {
   return (
